@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/aoc-2022.iml" filepath="$PROJECT_DIR$/.idea/aoc-2022.iml" />
       <module fileurl="file://$PROJECT_DIR$/day-1/day-1.iml" filepath="$PROJECT_DIR$/day-1/day-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day-2/day-2.iml" filepath="$PROJECT_DIR$/day-2/day-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day-3/day-3.iml" filepath="$PROJECT_DIR$/day-3/day-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day-4/day-4.iml" filepath="$PROJECT_DIR$/day-4/day-4.iml" />
     </modules>
   </component>
 </project>
