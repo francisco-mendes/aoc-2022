@@ -1,6 +1,6 @@
+use strategy::{FixedMatch, Roshambo, Strategy};
 use Outcome::*;
 use Shape::*;
-use strategy::{FixedMatch, Roshambo, Strategy};
 
 mod strategy;
 
@@ -76,15 +76,9 @@ pub fn compute_score<S>(input: &str) -> S::Out
 where
     S: Strategy,
 {
-    #[cfg(windows)]
-    const LEN: usize = 5;
-
-    #[cfg(not(windows))]
-    const LEN: usize = 4;
-
     input
-        .as_bytes()
-        .chunks(LEN)
+        .lines()
+        .map(str::as_bytes)
         .map(|c| (c[0], c[2]))
         .filter_map(S::parse_match)
         .map(S::match_score)
