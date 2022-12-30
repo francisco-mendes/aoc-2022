@@ -1,6 +1,17 @@
-use crate::Outcome::{Draw, Lose, Win};
-use crate::{Outcome, Shape};
-use crate::Shape::{Paper, Rock, Scissors};
+use crate::{
+    Outcome,
+    Outcome::{
+        Draw,
+        Lose,
+        Win,
+    },
+    Shape,
+    Shape::{
+        Paper,
+        Rock,
+        Scissors,
+    },
+};
 
 pub trait Strategy {
     type Input;

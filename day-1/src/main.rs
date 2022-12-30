@@ -19,8 +19,7 @@ fn sum_batched_lined(input: &str) -> impl Iterator<Item = u32> + '_ {
         .batching(|iter| iter.while_some().sum1())
 }
 
-fn sum_n_largest(slice: &mut [u32], n: usize) -> u32
-{
+fn sum_n_largest(slice: &mut [u32], n: usize) -> u32 {
     let start = slice.len() - n;
     slice.select_nth_unstable(start);
     slice[start..].iter().sum()

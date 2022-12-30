@@ -1,4 +1,8 @@
-use strategy::{FixedMatch, Roshambo, Strategy};
+use strategy::{
+    FixedMatch,
+    Roshambo,
+    Strategy,
+};
 use Outcome::*;
 use Shape::*;
 

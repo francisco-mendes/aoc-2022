@@ -57,7 +57,6 @@ fn main() {
 mod test {
     use super::*;
 
-
     #[test]
     fn example_works() {
         const INPUT: &str = include_str!("input/example.txt");
