@@ -74,11 +74,11 @@ fn main() {
 #[cfg(test)]
 mod test {
     use nom::{
-        Err,
         error::{
             Error,
             ErrorKind,
         },
+        Err,
     };
 
     use super::*;
