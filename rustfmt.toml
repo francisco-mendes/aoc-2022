@@ -1,0 +1,7 @@
+imports_layout = "Vertical"
+imports_granularity = "Crate"
+group_imports = "StdExternalCrate"
+
+reorder_impl_items = true
+
+struct_lit_width = 35
